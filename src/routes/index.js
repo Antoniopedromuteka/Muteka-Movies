@@ -3,6 +3,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 import Movies from '../pages/Movies'
 import StackRoutes from './StackRoutes'
 import { MaterialCommunityIcons } from "@expo/vector-icons"
+import Home from '../pages/home'
 
 const Drawer = createDrawerNavigator()
 
@@ -24,6 +25,7 @@ function Routes(){
       <Drawer.Screen
         options={{
           title: 'Home',
+          headerShown: false,
           drawerIcon: ({focused, size, color}) =>(
             <MaterialCommunityIcons 
               name={focused ? 'movie-open' : 'movie-outline'}
@@ -33,7 +35,7 @@ function Routes(){
           )
         }}
         name='HomeDrawer'
-        component={StackRoutes}
+        component={Home}
       />
       <Drawer.Screen
         options={{
