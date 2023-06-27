@@ -1,7 +1,7 @@
 import React from 'react'
 import { createDrawerNavigator } from "@react-navigation/drawer"
 import Movies from '../pages/Movies'
-import StackRoutes from './StackRoutes'
+// import StackRoutes from './StackRoutes'
 import { MaterialCommunityIcons } from "@expo/vector-icons"
 import Home from '../pages/home'
 
